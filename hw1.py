@@ -1,19 +1,35 @@
 # Задание 1
 #
-# num = int(input("введите секунды : "))
-#
-# sec = num % 86400
-#
-# min = sec // 60
-#
-# sec %= 60
-#
-# h = min // 60
-#
-# min %= 60
-#
-# day = num // 86400
-#
+num = int(input("введите секунды : "))
+
+sec = num % 86400
+
+min = sec // 60
+
+sec %= 60
+
+h = min // 60
+
+min %= 60
+
+day = num // 86400
+
+if day == num:
+    print(f'{num} дней')
+# if num == sec:
+#     print(f'{sec} секунд')
+elif num == h:
+    print(f'{num} часов')
+elif num == min:
+    print(f'{min} минут')
+elif num == sec:
+    print(f'{sec} секунд')
+else:
+    print(f"{day} дней") or (f'{h} часов') or (f'{min} мин') or (f"{sec} секунд")
+
+# else:
+#     print(f'{num} дней')
+
 # print(f"{day} дней {h} часов {min} мин {sec} секунд")
 
 # Задание №3
